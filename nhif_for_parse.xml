@@ -1,6 +1,6 @@
 <versions xmlns="http://schemas.openehr.org/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<version xmlns="http://schemas.openehr.org/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ORIGINAL_VERSION">
-  <contribution>
+   <version xsi:type="ORIGINAL_VERSION">
+ <contribution>
     <id xsi:type="HIER_OBJECT_ID">
       <value>16f98583-7b61-4683-a6eb-8ecd39aa4f0e</value>
     </id>
@@ -222,6 +222,9 @@
           </items>
         </items>
       </description>
+      <ism_transition><current_state><value>planned</value><defining_code>
+            <terminology_id><value>openehr</value></terminology_id>
+            <code_string>526</code_string></defining_code></current_state></ism_transition>
     </content>
   </data>
   <lifecycle_state>

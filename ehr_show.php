@@ -135,7 +135,7 @@ $templates = $ehrserver->get_templates();
         $("#documents tbody tr").click(function() {
           //window.document.location = $(this).data("href");
           console.log($(this).data('uid'));
-          window.document.location = 'compo_show.php?uid='+ $(this).data('uid');
+          window.document.location = 'show.php?uid='+ $(this).data('uid');
         });
       });
 

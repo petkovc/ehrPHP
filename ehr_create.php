@@ -6,7 +6,7 @@ if(isset($_POST['submit']))
 
   $ehr = $ehrserver->create_ehr(trim($_POST['subjectUid']));
 
-  //print_r($ehr);
+  print_r($ehr);
 }
 
 ?>

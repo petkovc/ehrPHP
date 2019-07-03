@@ -1,0 +1,893 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<form_definition xmlns="http://oceaninformatics.com/forms" xmlns:opt="http://schemas.openehr.org/v1" xmlns:oe="http://schemas.openehr.org/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <oe:original_language>
+    <oe:terminology_id>
+      <oe:value>ISO_639-1</oe:value>
+    </oe:terminology_id>
+    <oe:code_string>en</oe:code_string>
+  </oe:original_language>
+  <form_id>nhif1</form_id>
+  <opt_transform_id>0.3</opt_transform_id>
+  <template_id>nhif1</template_id>
+  <title>nhif</title>
+  <pages>
+    <controls xsi:type="FORM_CONTROL_GROUP">
+      <form_control_id>FormControlGroup_ID0E4G</form_control_id>
+      <node_id>at0000</node_id>
+      <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']</path>
+      <rm_type_name>ACTION</rm_type_name>
+      <label>Nhif medication</label>
+      <occurrences>
+        <oe:lower_included>true</oe:lower_included>
+        <oe:lower_unbounded>false</oe:lower_unbounded>
+        <oe:upper_unbounded>true</oe:upper_unbounded>
+        <oe:lower>0</oe:lower>
+      </occurrences>
+      <expanded>true</expanded>
+      <controls xsi:type="FORM_CONTROL_GROUP">
+        <form_control_id>FormControlGroup_ID0EOHAC</form_control_id>
+        <node_id>at0001</node_id>
+        <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']</path>
+        <rm_type_name>ITEM_TREE</rm_type_name>
+        <label>Tree</label>
+        <occurrences>
+          <oe:lower_included>true</oe:lower_included>
+          <oe:upper_included>true</oe:upper_included>
+          <oe:lower_unbounded>false</oe:lower_unbounded>
+          <oe:upper_unbounded>false</oe:upper_unbounded>
+          <oe:lower>1</oe:lower>
+          <oe:upper>1</oe:upper>
+        </occurrences>
+        <expanded>true</expanded>
+        <controls xsi:type="FORM_CONTROL_GROUP">
+          <form_control_id>FormControlGroup_ID0EYIAC</form_control_id>
+          <node_id>at0002</node_id>
+          <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']</path>
+          <rm_type_name>CLUSTER</rm_type_name>
+          <label>PrescriptionHeader</label>
+          <occurrences>
+            <oe:lower_included>true</oe:lower_included>
+            <oe:upper_included>true</oe:upper_included>
+            <oe:lower_unbounded>false</oe:lower_unbounded>
+            <oe:upper_unbounded>false</oe:upper_unbounded>
+            <oe:lower>0</oe:lower>
+            <oe:upper>1</oe:upper>
+          </occurrences>
+          <expanded>true</expanded>
+          <controls xsi:type="FORM_CONTROL_GROUP">
+            <form_control_id>FormControlGroup_ID0ECKAC</form_control_id>
+            <node_id>at0005</node_id>
+            <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0005 and name/value='typeOfPrescription']</path>
+            <rm_type_name>ELEMENT</rm_type_name>
+            <label>typeOfPrescription</label>
+            <occurrences>
+              <oe:lower_included>true</oe:lower_included>
+              <oe:upper_included>true</oe:upper_included>
+              <oe:lower_unbounded>false</oe:lower_unbounded>
+              <oe:upper_unbounded>false</oe:upper_unbounded>
+              <oe:lower>0</oe:lower>
+              <oe:upper>1</oe:upper>
+            </occurrences>
+            <controls xsi:type="ORDINAL_CONTROL">
+              <form_control_id>ValueControl_ID0EMLAC</form_control_id>
+              <node_id />
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0005 and name/value='typeOfPrescription']/value</path>
+              <rm_type_name>DV_ORDINAL</rm_type_name>
+              <label>value</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <rm_attribute_name>value</rm_attribute_name>
+              <assumed_value>
+                <oe:value>2</oe:value>
+                <oe:symbol>
+                  <oe:value>2</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0007</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </assumed_value>
+              <list>
+                <oe:value>1</oe:value>
+                <oe:symbol>
+                  <oe:value>1</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0006</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </list>
+              <list>
+                <oe:value>2</oe:value>
+                <oe:symbol>
+                  <oe:value>2</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0007</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </list>
+            </controls>
+          </controls>
+          <controls xsi:type="FORM_CONTROL_GROUP">
+            <form_control_id>FormControlGroup_ID0EBOAC</form_control_id>
+            <node_id>at0008</node_id>
+            <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0008 and name/value='prescriptionNo']</path>
+            <rm_type_name>ELEMENT</rm_type_name>
+            <label>prescriptionNo</label>
+            <occurrences>
+              <oe:lower_included>true</oe:lower_included>
+              <oe:upper_included>true</oe:upper_included>
+              <oe:lower_unbounded>false</oe:lower_unbounded>
+              <oe:upper_unbounded>false</oe:upper_unbounded>
+              <oe:lower>0</oe:lower>
+              <oe:upper>1</oe:upper>
+            </occurrences>
+            <controls xsi:type="TEXT_CONTROL">
+              <form_control_id>ValueControl_ID0ELPAC</form_control_id>
+              <node_id />
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0008 and name/value='prescriptionNo']/value</path>
+              <rm_type_name>DV_TEXT</rm_type_name>
+              <label>value</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <rm_attribute_name>value</rm_attribute_name>
+            </controls>
+          </controls>
+          <controls xsi:type="FORM_CONTROL_GROUP">
+            <form_control_id>FormControlGroup_ID0EFAAE</form_control_id>
+            <node_id>at0009</node_id>
+            <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0009 and name/value='prescriptionDate']</path>
+            <rm_type_name>ELEMENT</rm_type_name>
+            <label>prescriptionDate</label>
+            <occurrences>
+              <oe:lower_included>true</oe:lower_included>
+              <oe:upper_included>true</oe:upper_included>
+              <oe:lower_unbounded>false</oe:lower_unbounded>
+              <oe:upper_unbounded>false</oe:upper_unbounded>
+              <oe:lower>0</oe:lower>
+              <oe:upper>1</oe:upper>
+            </occurrences>
+            <controls xsi:type="DATE_CONTROL">
+              <form_control_id>ValueControl_ID0EPBAE</form_control_id>
+              <node_id />
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0009 and name/value='prescriptionDate']/value</path>
+              <rm_type_name>DV_DATE</rm_type_name>
+              <label>value</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <rm_attribute_name>value</rm_attribute_name>
+              <pattern>yyyy-mm-dd</pattern>
+            </controls>
+          </controls>
+          <controls xsi:type="FORM_CONTROL_GROUP">
+            <form_control_id>FormControlGroup_ID0E1DAE</form_control_id>
+            <node_id>at0017</node_id>
+            <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0017 and name/value='Sender']</path>
+            <rm_type_name>CLUSTER</rm_type_name>
+            <label>Sender</label>
+            <occurrences>
+              <oe:lower_included>true</oe:lower_included>
+              <oe:upper_included>true</oe:upper_included>
+              <oe:lower_unbounded>false</oe:lower_unbounded>
+              <oe:upper_unbounded>false</oe:upper_unbounded>
+              <oe:lower>0</oe:lower>
+              <oe:upper>1</oe:upper>
+            </occurrences>
+            <expanded>true</expanded>
+            <controls xsi:type="FORM_CONTROL_GROUP">
+              <form_control_id>FormControlGroup_ID0EEFAE</form_control_id>
+              <node_id>at0018</node_id>
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0017 and name/value='Sender']/items[at0018 and name/value='doctorUin']</path>
+              <rm_type_name>ELEMENT</rm_type_name>
+              <label>doctorUin</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <controls xsi:type="TEXT_CONTROL">
+                <form_control_id>ValueControl_ID0EOGAE</form_control_id>
+                <node_id />
+                <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0017 and name/value='Sender']/items[at0018 and name/value='doctorUin']/value</path>
+                <rm_type_name>DV_TEXT</rm_type_name>
+                <label>value</label>
+                <occurrences>
+                  <oe:lower_included>true</oe:lower_included>
+                  <oe:upper_included>true</oe:upper_included>
+                  <oe:lower_unbounded>false</oe:lower_unbounded>
+                  <oe:upper_unbounded>false</oe:upper_unbounded>
+                  <oe:lower>0</oe:lower>
+                  <oe:upper>1</oe:upper>
+                </occurrences>
+                <rm_attribute_name>value</rm_attribute_name>
+              </controls>
+            </controls>
+            <controls xsi:type="FORM_CONTROL_GROUP">
+              <form_control_id>FormControlGroup_ID0EHHAE</form_control_id>
+              <node_id>at0021</node_id>
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0017 and name/value='Sender']/items[at0021 and name/value='doctorSpecialty']</path>
+              <rm_type_name>ELEMENT</rm_type_name>
+              <label>doctorSpecialty</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <controls xsi:type="TEXT_CONTROL">
+                <form_control_id>ValueControl_ID0ERIAE</form_control_id>
+                <node_id />
+                <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0017 and name/value='Sender']/items[at0021 and name/value='doctorSpecialty']/value</path>
+                <rm_type_name>DV_TEXT</rm_type_name>
+                <label>value</label>
+                <occurrences>
+                  <oe:lower_included>true</oe:lower_included>
+                  <oe:upper_included>true</oe:upper_included>
+                  <oe:lower_unbounded>false</oe:lower_unbounded>
+                  <oe:upper_unbounded>false</oe:upper_unbounded>
+                  <oe:lower>0</oe:lower>
+                  <oe:upper>1</oe:upper>
+                </occurrences>
+                <rm_attribute_name>value</rm_attribute_name>
+              </controls>
+            </controls>
+            <controls xsi:type="FORM_CONTROL_GROUP">
+              <form_control_id>FormControlGroup_ID0EKJAE</form_control_id>
+              <node_id>at0019</node_id>
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0017 and name/value='Sender']/items[at0019 and name/value='heRegistrationNo']</path>
+              <rm_type_name>ELEMENT</rm_type_name>
+              <label>heRegistrationNo</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <controls xsi:type="TEXT_CONTROL">
+                <form_control_id>ValueControl_ID0EUKAE</form_control_id>
+                <node_id />
+                <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0017 and name/value='Sender']/items[at0019 and name/value='heRegistrationNo']/value</path>
+                <rm_type_name>DV_TEXT</rm_type_name>
+                <label>value</label>
+                <occurrences>
+                  <oe:lower_included>true</oe:lower_included>
+                  <oe:upper_included>true</oe:upper_included>
+                  <oe:lower_unbounded>false</oe:lower_unbounded>
+                  <oe:upper_unbounded>false</oe:upper_unbounded>
+                  <oe:lower>0</oe:lower>
+                  <oe:upper>1</oe:upper>
+                </occurrences>
+                <rm_attribute_name>value</rm_attribute_name>
+              </controls>
+            </controls>
+            <controls xsi:type="FORM_CONTROL_GROUP">
+              <form_control_id>FormControlGroup_ID0ENLAE</form_control_id>
+              <node_id>at0020</node_id>
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0017 and name/value='Sender']/items[at0020 and name/value='ambulatorySheetNo']</path>
+              <rm_type_name>ELEMENT</rm_type_name>
+              <label>ambulatorySheetNo</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <controls xsi:type="TEXT_CONTROL">
+                <form_control_id>ValueControl_ID0EXMAE</form_control_id>
+                <node_id />
+                <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0017 and name/value='Sender']/items[at0020 and name/value='ambulatorySheetNo']/value</path>
+                <rm_type_name>DV_TEXT</rm_type_name>
+                <label>value</label>
+                <occurrences>
+                  <oe:lower_included>true</oe:lower_included>
+                  <oe:upper_included>true</oe:upper_included>
+                  <oe:lower_unbounded>false</oe:lower_unbounded>
+                  <oe:upper_unbounded>false</oe:upper_unbounded>
+                  <oe:lower>0</oe:lower>
+                  <oe:upper>1</oe:upper>
+                </occurrences>
+                <rm_attribute_name>value</rm_attribute_name>
+              </controls>
+            </controls>
+            <controls xsi:type="FORM_CONTROL_GROUP">
+              <form_control_id>FormControlGroup_ID0EQNAE</form_control_id>
+              <node_id>at0022</node_id>
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0017 and name/value='Sender']/items[at0022 and name/value='ambSheetPrescriptionNo']</path>
+              <rm_type_name>ELEMENT</rm_type_name>
+              <label>ambSheetPrescriptionNo</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <controls xsi:type="TEXT_CONTROL">
+                <form_control_id>ValueControl_ID0E1OAE</form_control_id>
+                <node_id />
+                <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0017 and name/value='Sender']/items[at0022 and name/value='ambSheetPrescriptionNo']/value</path>
+                <rm_type_name>DV_TEXT</rm_type_name>
+                <label>value</label>
+                <occurrences>
+                  <oe:lower_included>true</oe:lower_included>
+                  <oe:upper_included>true</oe:upper_included>
+                  <oe:lower_unbounded>false</oe:lower_unbounded>
+                  <oe:upper_unbounded>false</oe:upper_unbounded>
+                  <oe:lower>0</oe:lower>
+                  <oe:upper>1</oe:upper>
+                </occurrences>
+                <rm_attribute_name>value</rm_attribute_name>
+              </controls>
+            </controls>
+          </controls>
+          <controls xsi:type="FORM_CONTROL_GROUP">
+            <form_control_id>FormControlGroup_ID0EHQAE</form_control_id>
+            <node_id>at0003</node_id>
+            <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0003 and name/value='Patient']</path>
+            <rm_type_name>CLUSTER</rm_type_name>
+            <label>Patient</label>
+            <occurrences>
+              <oe:lower_included>true</oe:lower_included>
+              <oe:upper_included>true</oe:upper_included>
+              <oe:lower_unbounded>false</oe:lower_unbounded>
+              <oe:upper_unbounded>false</oe:upper_unbounded>
+              <oe:lower>0</oe:lower>
+              <oe:upper>1</oe:upper>
+            </occurrences>
+            <expanded>true</expanded>
+            <controls xsi:type="FORM_CONTROL_GROUP">
+              <form_control_id>FormControlGroup_ID0ERRAE</form_control_id>
+              <node_id>at0010</node_id>
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0003 and name/value='Patient']/items[at0010 and name/value='EGN']</path>
+              <rm_type_name>ELEMENT</rm_type_name>
+              <label>EGN</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <controls xsi:type="TEXT_CONTROL">
+                <form_control_id>ValueControl_ID0E2SAE</form_control_id>
+                <node_id />
+                <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0003 and name/value='Patient']/items[at0010 and name/value='EGN']/value</path>
+                <rm_type_name>DV_TEXT</rm_type_name>
+                <label>value</label>
+                <occurrences>
+                  <oe:lower_included>true</oe:lower_included>
+                  <oe:upper_included>true</oe:upper_included>
+                  <oe:lower_unbounded>false</oe:lower_unbounded>
+                  <oe:upper_unbounded>false</oe:upper_unbounded>
+                  <oe:lower>0</oe:lower>
+                  <oe:upper>1</oe:upper>
+                </occurrences>
+                <rm_attribute_name>value</rm_attribute_name>
+              </controls>
+            </controls>
+            <controls xsi:type="FORM_CONTROL_GROUP">
+              <form_control_id>FormControlGroup_ID0EUTAE</form_control_id>
+              <node_id>at0011</node_id>
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0003 and name/value='Patient']/items[at0011 and name/value='prescriptionBookletNo']</path>
+              <rm_type_name>ELEMENT</rm_type_name>
+              <label>prescriptionBookletNo</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <controls xsi:type="TEXT_CONTROL">
+                <form_control_id>ValueControl_ID0E5UAE</form_control_id>
+                <node_id />
+                <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0002 and name/value='PrescriptionHeader']/items[at0003 and name/value='Patient']/items[at0011 and name/value='prescriptionBookletNo']/value</path>
+                <rm_type_name>DV_TEXT</rm_type_name>
+                <label>value</label>
+                <occurrences>
+                  <oe:lower_included>true</oe:lower_included>
+                  <oe:upper_included>true</oe:upper_included>
+                  <oe:lower_unbounded>false</oe:lower_unbounded>
+                  <oe:upper_unbounded>false</oe:upper_unbounded>
+                  <oe:lower>0</oe:lower>
+                  <oe:upper>1</oe:upper>
+                </occurrences>
+                <rm_attribute_name>value</rm_attribute_name>
+              </controls>
+            </controls>
+          </controls>
+        </controls>
+        <controls xsi:type="FORM_CONTROL_GROUP">
+          <form_control_id>FormControlGroup_ID0E6WAE</form_control_id>
+          <node_id>at0004</node_id>
+          <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']</path>
+          <rm_type_name>CLUSTER</rm_type_name>
+          <label>PrescriptionDrug</label>
+          <occurrences>
+            <oe:lower_included>true</oe:lower_included>
+            <oe:upper_included>true</oe:upper_included>
+            <oe:lower_unbounded>false</oe:lower_unbounded>
+            <oe:upper_unbounded>false</oe:upper_unbounded>
+            <oe:lower>1</oe:lower>
+            <oe:upper>3</oe:upper>
+          </occurrences>
+          <expanded>true</expanded>
+          <controls xsi:type="FORM_CONTROL_GROUP">
+            <form_control_id>FormControlGroup_ID0EJYAE</form_control_id>
+            <node_id>at0012</node_id>
+            <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0012 and name/value='drugNHIFCode']</path>
+            <rm_type_name>ELEMENT</rm_type_name>
+            <label>drugNHIFCode</label>
+            <occurrences>
+              <oe:lower_included>true</oe:lower_included>
+              <oe:upper_included>true</oe:upper_included>
+              <oe:lower_unbounded>false</oe:lower_unbounded>
+              <oe:upper_unbounded>false</oe:upper_unbounded>
+              <oe:lower>0</oe:lower>
+              <oe:upper>1</oe:upper>
+            </occurrences>
+            <controls xsi:type="TEXT_CONTROL">
+              <form_control_id>ValueControl_ID0ETZAE</form_control_id>
+              <node_id />
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0012 and name/value='drugNHIFCode']/value</path>
+              <rm_type_name>DV_TEXT</rm_type_name>
+              <label>value</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <rm_attribute_name>value</rm_attribute_name>
+            </controls>
+          </controls>
+          <controls xsi:type="FORM_CONTROL_GROUP">
+            <form_control_id>FormControlGroup_ID0EM1AE</form_control_id>
+            <node_id>at0013</node_id>
+            <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0013 and name/value='codeICD']</path>
+            <rm_type_name>ELEMENT</rm_type_name>
+            <label>codeICD</label>
+            <occurrences>
+              <oe:lower_included>true</oe:lower_included>
+              <oe:upper_included>true</oe:upper_included>
+              <oe:lower_unbounded>false</oe:lower_unbounded>
+              <oe:upper_unbounded>false</oe:upper_unbounded>
+              <oe:lower>0</oe:lower>
+              <oe:upper>1</oe:upper>
+            </occurrences>
+            <controls xsi:type="TEXT_CONTROL">
+              <form_control_id>ValueControl_ID0EW2AE</form_control_id>
+              <node_id />
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0013 and name/value='codeICD']/value</path>
+              <rm_type_name>DV_TEXT</rm_type_name>
+              <label>value</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <rm_attribute_name>value</rm_attribute_name>
+            </controls>
+          </controls>
+          <controls xsi:type="FORM_CONTROL_GROUP">
+            <form_control_id>FormControlGroup_ID0EP3AE</form_control_id>
+            <node_id>at0023</node_id>
+            <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0023 and name/value='prescribedQuantity']</path>
+            <rm_type_name>ELEMENT</rm_type_name>
+            <label>prescribedQuantity</label>
+            <occurrences>
+              <oe:lower_included>true</oe:lower_included>
+              <oe:upper_included>true</oe:upper_included>
+              <oe:lower_unbounded>false</oe:lower_unbounded>
+              <oe:upper_unbounded>false</oe:upper_unbounded>
+              <oe:lower>0</oe:lower>
+              <oe:upper>1</oe:upper>
+            </occurrences>
+            <controls xsi:type="QUANTITY_CONTROL">
+              <form_control_id>ValueControl_ID0EZ4AE</form_control_id>
+              <node_id />
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0023 and name/value='prescribedQuantity']/value</path>
+              <rm_type_name>DV_QUANTITY</rm_type_name>
+              <label>value</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <rm_attribute_name>value</rm_attribute_name>
+            </controls>
+          </controls>
+          <controls xsi:type="FORM_CONTROL_GROUP">
+            <form_control_id>FormControlGroup_ID0ES5AE</form_control_id>
+            <node_id>at0025</node_id>
+            <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0025 and name/value='prescribedMeasure']</path>
+            <rm_type_name>ELEMENT</rm_type_name>
+            <label>prescribedMeasure</label>
+            <occurrences>
+              <oe:lower_included>true</oe:lower_included>
+              <oe:upper_included>true</oe:upper_included>
+              <oe:lower_unbounded>false</oe:lower_unbounded>
+              <oe:upper_unbounded>false</oe:upper_unbounded>
+              <oe:lower>0</oe:lower>
+              <oe:upper>1</oe:upper>
+            </occurrences>
+            <controls xsi:type="ORDINAL_CONTROL">
+              <form_control_id>ValueControl_ID0E36AE</form_control_id>
+              <node_id />
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0025 and name/value='prescribedMeasure']/value</path>
+              <rm_type_name>DV_ORDINAL</rm_type_name>
+              <label>value</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <rm_attribute_name>value</rm_attribute_name>
+              <assumed_value>
+                <oe:value>0</oe:value>
+                <oe:symbol>
+                  <oe:value>Pack</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0026</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </assumed_value>
+              <list>
+                <oe:value>0</oe:value>
+                <oe:symbol>
+                  <oe:value>Pack</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0026</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </list>
+              <list>
+                <oe:value>1</oe:value>
+                <oe:symbol>
+                  <oe:value>Ampolules</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0027</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </list>
+              <list>
+                <oe:value>2</oe:value>
+                <oe:symbol>
+                  <oe:value>Syringes</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0028</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </list>
+              <list>
+                <oe:value>3</oe:value>
+                <oe:symbol>
+                  <oe:value>Bottles</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0029</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </list>
+              <list>
+                <oe:value>4</oe:value>
+                <oe:symbol>
+                  <oe:value>Tablets</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0030</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </list>
+            </controls>
+          </controls>
+          <controls xsi:type="FORM_CONTROL_GROUP">
+            <form_control_id>FormControlGroup_ID0EOEAG</form_control_id>
+            <node_id>at0024</node_id>
+            <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0024 and name/value='numberOfDays']</path>
+            <rm_type_name>ELEMENT</rm_type_name>
+            <label>numberOfDays</label>
+            <occurrences>
+              <oe:lower_included>true</oe:lower_included>
+              <oe:upper_included>true</oe:upper_included>
+              <oe:lower_unbounded>false</oe:lower_unbounded>
+              <oe:upper_unbounded>false</oe:upper_unbounded>
+              <oe:lower>0</oe:lower>
+              <oe:upper>1</oe:upper>
+            </occurrences>
+            <controls xsi:type="QUANTITY_CONTROL">
+              <form_control_id>ValueControl_ID0EYFAG</form_control_id>
+              <node_id />
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0024 and name/value='numberOfDays']/value</path>
+              <rm_type_name>DV_QUANTITY</rm_type_name>
+              <label>value</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <rm_attribute_name>value</rm_attribute_name>
+            </controls>
+          </controls>
+          <controls xsi:type="FORM_CONTROL_GROUP">
+            <form_control_id>FormControlGroup_ID0ERGAG</form_control_id>
+            <node_id>at0031</node_id>
+            <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0031 and name/value='signatureQuantity']</path>
+            <rm_type_name>ELEMENT</rm_type_name>
+            <label>signatureQuantity</label>
+            <occurrences>
+              <oe:lower_included>true</oe:lower_included>
+              <oe:upper_included>true</oe:upper_included>
+              <oe:lower_unbounded>false</oe:lower_unbounded>
+              <oe:upper_unbounded>false</oe:upper_unbounded>
+              <oe:lower>0</oe:lower>
+              <oe:upper>1</oe:upper>
+            </occurrences>
+            <controls xsi:type="QUANTITY_CONTROL">
+              <form_control_id>ValueControl_ID0E2HAG</form_control_id>
+              <node_id />
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0031 and name/value='signatureQuantity']/value</path>
+              <rm_type_name>DV_QUANTITY</rm_type_name>
+              <label>value</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <rm_attribute_name>value</rm_attribute_name>
+            </controls>
+          </controls>
+          <controls xsi:type="FORM_CONTROL_GROUP">
+            <form_control_id>FormControlGroup_ID0EUIAG</form_control_id>
+            <node_id>at0032</node_id>
+            <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0032 and name/value='signatureRepeats']</path>
+            <rm_type_name>ELEMENT</rm_type_name>
+            <label>signatureRepeats</label>
+            <occurrences>
+              <oe:lower_included>true</oe:lower_included>
+              <oe:upper_included>true</oe:upper_included>
+              <oe:lower_unbounded>false</oe:lower_unbounded>
+              <oe:upper_unbounded>false</oe:upper_unbounded>
+              <oe:lower>0</oe:lower>
+              <oe:upper>1</oe:upper>
+            </occurrences>
+            <controls xsi:type="QUANTITY_CONTROL">
+              <form_control_id>ValueControl_ID0E5JAG</form_control_id>
+              <node_id />
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0032 and name/value='signatureRepeats']/value</path>
+              <rm_type_name>DV_QUANTITY</rm_type_name>
+              <label>value</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <rm_attribute_name>value</rm_attribute_name>
+            </controls>
+          </controls>
+          <controls xsi:type="FORM_CONTROL_GROUP">
+            <form_control_id>FormControlGroup_ID0EXKAG</form_control_id>
+            <node_id>at0034</node_id>
+            <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0034 and name/value='signatureOccurrence']</path>
+            <rm_type_name>ELEMENT</rm_type_name>
+            <label>signatureOccurrence</label>
+            <occurrences>
+              <oe:lower_included>true</oe:lower_included>
+              <oe:upper_included>true</oe:upper_included>
+              <oe:lower_unbounded>false</oe:lower_unbounded>
+              <oe:upper_unbounded>false</oe:upper_unbounded>
+              <oe:lower>0</oe:lower>
+              <oe:upper>1</oe:upper>
+            </occurrences>
+            <controls xsi:type="ORDINAL_CONTROL">
+              <form_control_id>ValueControl_ID0EBMAG</form_control_id>
+              <node_id />
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0034 and name/value='signatureOccurrence']/value</path>
+              <rm_type_name>DV_ORDINAL</rm_type_name>
+              <label>value</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <rm_attribute_name>value</rm_attribute_name>
+              <assumed_value>
+                <oe:value>0</oe:value>
+                <oe:symbol>
+                  <oe:value>Daily</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0035</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </assumed_value>
+              <list>
+                <oe:value>0</oe:value>
+                <oe:symbol>
+                  <oe:value>Daily</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0035</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </list>
+              <list>
+                <oe:value>1</oe:value>
+                <oe:symbol>
+                  <oe:value>Weekly</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0036</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </list>
+              <list>
+                <oe:value>2</oe:value>
+                <oe:symbol>
+                  <oe:value>Monthly</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0037</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </list>
+              <list>
+                <oe:value>3</oe:value>
+                <oe:symbol>
+                  <oe:value>Quaterly</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0038</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </list>
+              <list>
+                <oe:value>4</oe:value>
+                <oe:symbol>
+                  <oe:value>Half yearly</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0039</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </list>
+              <list>
+                <oe:value>5</oe:value>
+                <oe:symbol>
+                  <oe:value>Yearly</oe:value>
+                  <oe:defining_code>
+                    <oe:terminology_id>
+                      <oe:value>local</oe:value>
+                    </oe:terminology_id>
+                    <oe:code_string>at0040</oe:code_string>
+                  </oe:defining_code>
+                </oe:symbol>
+              </list>
+            </controls>
+          </controls>
+          <controls xsi:type="FORM_CONTROL_GROUP">
+            <form_control_id>FormControlGroup_ID0EGRAG</form_control_id>
+            <node_id>at0016</node_id>
+            <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0016 and name/value='Allow susbstitution?']</path>
+            <rm_type_name>ELEMENT</rm_type_name>
+            <label>Allow susbstitution?</label>
+            <occurrences>
+              <oe:lower_included>true</oe:lower_included>
+              <oe:upper_included>true</oe:upper_included>
+              <oe:lower_unbounded>false</oe:lower_unbounded>
+              <oe:upper_unbounded>false</oe:upper_unbounded>
+              <oe:lower>0</oe:lower>
+              <oe:upper>1</oe:upper>
+            </occurrences>
+            <controls xsi:type="BOOLEAN_CONTROL">
+              <form_control_id>ValueControl_ID0EQSAG</form_control_id>
+              <node_id />
+              <path xml:space="preserve">/content[openEHR-EHR-ACTION.nhif_medication.v2 and name/value='Nhif medication']/description[at0001 and name/value='Tree']/items[at0004 and name/value='PrescriptionDrug']/items[at0016 and name/value='Allow susbstitution?']/value</path>
+              <rm_type_name>DV_BOOLEAN</rm_type_name>
+              <label>value</label>
+              <occurrences>
+                <oe:lower_included>true</oe:lower_included>
+                <oe:upper_included>true</oe:upper_included>
+                <oe:lower_unbounded>false</oe:lower_unbounded>
+                <oe:upper_unbounded>false</oe:upper_unbounded>
+                <oe:lower>0</oe:lower>
+                <oe:upper>1</oe:upper>
+              </occurrences>
+              <rm_attribute_name>value</rm_attribute_name>
+              <false_valid>true</false_valid>
+              <true_valid>true</true_valid>
+            </controls>
+          </controls>
+        </controls>
+      </controls>
+    </controls>
+  </pages>
+</form_definition>

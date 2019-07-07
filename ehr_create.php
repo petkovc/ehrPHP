@@ -7,8 +7,23 @@ if(isset($_POST['submit']))
   $ehr = $ehrserver->create_ehr(trim($_POST['subjectUid']));
 
   print_r($ehr);
+
+
+
 }
 
+  function generate_uuid()
+{
+    return sprintf( '%04x%04x-%04x-%04x-%04x-%04x%04x%04x',
+	mt_rand( 0, 0xffff ), mt_rand( 0, 0xffff ),
+	mt_rand( 0, 0xffff ),
+	mt_rand( 0, 0x0fff ) | 0x4000,
+	mt_rand( 0, 0x3fff ) | 0x8000,
+	mt_rand( 0, 0xffff ), mt_rand( 0, 0xffff ), mt_rand( 0, 0xffff )
+    );
+}
+
+$uuid=generate_uuid();
 ?>
 <!doctype html>
 <html lang="en">
@@ -48,7 +63,7 @@ if(isset($_POST['submit']))
             <div class="row">
               <div class="col-md-12 mb-3">
                 <label for="subjectUid">Subject UID</label>
-                <input type="text" class="form-control" name="subjectUid" id="subjectUid" value="" required />
+                <input type="text" class="form-control" name="subjectUid" id="subjectUid" value="<?=$uuid?>" required />
               </div>
             </div>
 

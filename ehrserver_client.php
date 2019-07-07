@@ -4,6 +4,19 @@ class EHRServer {
 
   private $token = null;
   private $base_url = null;
+  function generate_uuid()
+{
+    return sprintf( '%04x%04x-%04x-%04x-%04x-%04x%04x%04x',
+	mt_rand( 0, 0xffff ), mt_rand( 0, 0xffff ),
+	mt_rand( 0, 0xffff ),
+	mt_rand( 0, 0x0fff ) | 0x4000,
+	mt_rand( 0, 0x3fff ) | 0x8000,
+	mt_rand( 0, 0xffff ), mt_rand( 0, 0xffff ), mt_rand( 0, 0xffff )
+    );
+}
+
+
+
 
   function __construct($base_url)
   {
@@ -66,7 +79,7 @@ class EHRServer {
   function create_ehr($subject_uid)
   {
     $url = $this->base_url .'ehrs';
-    $data = array('format' => 'json', 'subjectUid' => $subject_uid);
+    $data = array('format' => 'json', 'subjectUid' => $subject_uid, 'uid' => $this->generate_uuid());
 
     // use key 'http' even if you send the request to https://...
     $options = array('http'=>array('method'=>'POST', 'header' => "Authorization: Bearer " . $this->token));

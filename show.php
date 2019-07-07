@@ -17,7 +17,7 @@ $proc->importStyleSheet($xsl);
 $html = $proc->transformToXML($xml);
 
 //print_r($compo->version->data->content->description->items[0]->items[0]->value->value);
-print_r($compo->version->data->content->description->items[1]->items[3]->value->value);
+//print_r($compo->version->data->content->description->items[1]->items[3]->value->value);
 
 //$array = (array)$compo;
 //echo $array['ChargeableRateInfo']['@surchargetotal'];
@@ -56,13 +56,14 @@ print_r($compo->version->data->content->description->items[1]->items[3]->value->
     </head>
 
     <body>
-	    <?php //include('top.php'); ?>
+	    <?php// include('top.php'); ?><?php// include('menu.php');?>
+
           <form class="container" method="post" action="">
             <input type="hidden" name="ehr_uid" value="<?=$_GET['ehr_uid']?>" />
  
  <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 pb-5 mt-3">
+                <div class="col-12 pb-5 mt-1">
  			<div class="card border-info rounded-0" style="border-width: 2px;">
                             <div class="card-header p-0">
                                 <div class="bg-info text-white text-center py-2">

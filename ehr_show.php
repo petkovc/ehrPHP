@@ -66,7 +66,7 @@ $templates = $ehrserver->get_templates('6b92f9a8-856d-4f9d-9936-d908d0baae08');
                         </tbody>
                     </table>
 
-                    <a href="compo_create_nhifact.en.v1.php?<?= $_GET['uid'] ?>" class="btn btn-primary btn-lg" role="button">Нова Електронна Рецепта</a>
+                    <a href="compo_create_nhifact.en.v1.php?ehr_uid=<?= $_GET['uid'] ?>" class="btn btn-primary btn-lg" role="button">Нова Електронна Рецепта</a>
                 </main>
             </div>
         </div>
